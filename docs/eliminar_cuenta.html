@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Eliminar cuenta - Trivial</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 24px;
+            background: #171329;
+            color: #f4f1ff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 720px;
+            margin: 40px auto;
+            padding: 32px;
+            background: #241d3d;
+            border-radius: 20px;
+        }
+
+        h1 {
+            margin-top: 0;
+            margin-bottom: 18px;
+            font-size: 30px;
+        }
+
+        h2 {
+            margin-top: 30px;
+            font-size: 20px;
+        }
+
+        p {
+            color: #d8d3e8;
+            line-height: 1.7;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #51456f;
+            border-radius: 12px;
+            outline: none;
+            background: #171329;
+            color: #ffffff;
+            font-size: 16px;
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 24px;
+            padding: 15px;
+            border: 0;
+            border-radius: 12px;
+            background: #ffd21c;
+            color: #171329;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.92;
+        }
+
+        .note {
+            margin-top: 24px;
+            font-size: 13px;
+            color: #aaa3bf;
+        }
+
+        .email {
+            color: #ffd21c;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <h1>Eliminar cuenta de Trivial</h1>
+
+    <p>
+        Desde esta página puedes iniciar una solicitud para
+        eliminar tu cuenta de Trivial y los datos asociados.
+    </p>
+
+    <p>
+        Completa el formulario y pulsa
+        <strong>Solicitar eliminación</strong>.
+        Se abrirá tu aplicación de correo con la solicitud
+        preparada para:
+    </p>
+
+    <p class="email">
+        trivialSupport@gmail.com
+    </p>
+
+    <form id="formularioEliminacion">
+
+        <label for="nombre">
+            Nombre de usuario
+        </label>
+
+        <input
+            id="nombre"
+            name="nombre"
+            type="text"
+            required
+        >
+
+        <label for="email">
+            Correo asociado a la cuenta
+        </label>
+
+        <input
+            id="email"
+            name="email"
+            type="email"
+            required
+        >
+
+        <label for="mensaje">
+            Información adicional (opcional)
+        </label>
+
+        <textarea
+            id="mensaje"
+            name="mensaje"
+            placeholder="Puedes añadir cualquier información que ayude a identificar tu cuenta."
+        ></textarea>
+
+        <button type="submit">
+            Solicitar eliminación
+        </button>
+
+    </form>
+
+    <h2>
+        ¿Qué ocurre después?
+    </h2>
+
+    <p>
+        La solicitud se enviará por correo electrónico.
+        Se verificará la solicitud y se tramitará la eliminación
+        de la cuenta y de los datos que correspondan.
+    </p>
+
+    <p>
+        Algunos datos podrían conservarse durante el tiempo
+        necesario cuando exista una obligación legal o una
+        razón legítima para ello.
+    </p>
+
+    <p class="note">
+        Contacto:
+        trivialSupport@gmail.com
+    </p>
+
+</div>
+
+<script>
+    document
+        .getElementById("formularioEliminacion")
+        .addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            const nombre =
+                document
+                    .getElementById("nombre")
+                    .value
+                    .trim();
+
+            const email =
+                document
+                    .getElementById("email")
+                    .value
+                    .trim();
+
+            const mensaje =
+                document
+                    .getElementById("mensaje")
+                    .value
+                    .trim();
+
+            const asunto =
+                "Solicitud de eliminación de cuenta - Trivial";
+
+            const cuerpo =
+                "Hola,\n\n" +
+                "Quiero solicitar la eliminación de mi cuenta " +
+                "de Trivial y de los datos asociados.\n\n" +
+                "Nombre: " +
+                nombre +
+                "\n" +
+                "Correo de la cuenta: " +
+                email +
+                "\n\n" +
+                "Información adicional:\n" +
+                (
+                    mensaje.length > 0
+                        ? mensaje
+                        : "Sin información adicional."
+                ) +
+                "\n\n" +
+                "Gracias.";
+
+            const url =
+                "mailto:trivialSupport@gmail.com" +
+                "?subject=" +
+                encodeURIComponent(asunto) +
+                "&body=" +
+                encodeURIComponent(cuerpo);
+
+            window.location.href = url;
+        });
+</script>
+
+</body>
+</html>
