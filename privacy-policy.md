@@ -2,122 +2,169 @@
 
 **Última actualización:** 18 de octubre de 2026
 
-## 1. Responsable del tratamiento
+## 1. Responsable de la aplicación
 
-NasCole es una aplicación móvil de entretenimiento y preguntas tipo trivial.
+NasCole es una aplicación móvil de entretenimiento basada en preguntas tipo trivial.
 
-- **Responsable:** Sergio Iglesias Lobo.
-- **Correo de contacto:** supportTrivial@gmail.com
-- **Aplicación:** NasCole.
+- **Nombre de la aplicación:** NasCole.
+- **Responsable del tratamiento:** Sergio Iglesias Lobo.
+- **Correo electrónico de contacto:** trivialSupport@gmail.com.
 - **País:** España.
 
-El responsable tratará los datos personales de acuerdo con la normativa de protección de datos aplicable, incluido el Reglamento General de Protección de Datos (RGPD) y la legislación española correspondiente.
+El responsable tratará los datos personales conforme al Reglamento General de Protección de Datos (RGPD) y a la normativa española aplicable.
 
-## 2. Qué datos podemos recopilar
+## 2. Datos que podemos tratar
 
-En función de las funciones que utilice cada usuario, NasCole puede tratar las siguientes categorías de datos:
+Dependiendo de las funciones utilizadas, NasCole puede tratar las siguientes categorías de datos:
 
-- **Datos de cuenta:** identificador de usuario, correo electrónico y datos necesarios para iniciar sesión.
-- **Datos del perfil:** nombre o apodo, imagen de perfil y otros datos que el usuario decida proporcionar.
-- **Datos de juego:** puntuaciones, resultados, progreso, participación en ligas, desafíos y clasificaciones.
-- **Datos de interacción:** mensajes de chat y notificaciones relacionadas con las funciones sociales de la aplicación, cuando estén disponibles.
-- **Datos técnicos:** identificadores técnicos necesarios para el funcionamiento de la aplicación, incluidos los tokens de notificaciones push cuando se utilicen.
+**Datos de registro y autenticación**
+- Dirección de correo electrónico, cuando se utilice para crear o gestionar una cuenta.
+- Identificador de usuario generado por Firebase Authentication.
+- Información básica del perfil facilitada por el proveedor de inicio de sesión, cuando el usuario acceda mediante Google.
+- Información necesaria para gestionar la sesión y proteger la cuenta.
 
-NasCole no debe solicitar datos que no sean necesarios para sus funciones. No se deben introducir datos sensibles en los campos de perfil o chat.
+**Datos del perfil y del juego**
+- Nombre o apodo e imagen de perfil, si el usuario los proporciona.
+- Puntuaciones, resultados, progreso, ligas, clasificaciones y participación en partidas.
+- Información asociada a las funciones sociales, como mensajes o interacciones, si dichas funciones están disponibles.
 
-## 3. Para qué utilizamos los datos
+**Datos técnicos**
+- Identificadores técnicos necesarios para prestar los servicios.
+- Tokens de notificaciones push, cuando se utilice Firebase Cloud Messaging.
+- Información técnica y operativa generada por los servicios de Firebase.
 
-Los datos se utilizan para:
+La aplicación no pretende recopilar datos personales que no sean necesarios para sus funciones. Los datos concretos tratados dependerán de las funcionalidades y configuraciones activas.
 
-- Crear y gestionar las cuentas de usuario.
-- Permitir el inicio de sesión y mantener la seguridad de las cuentas.
-- Guardar las puntuaciones, los resultados y el progreso de las partidas.
-- Gestionar ligas, clasificaciones, desafíos y funciones sociales.
-- Enviar notificaciones relacionadas con la actividad de la aplicación, si el usuario tiene activadas esas funciones.
-- Atender consultas de soporte y solicitudes de ejercicio de derechos.
-- Detectar problemas técnicos, prevenir usos indebidos y mantener el servicio.
+## 3. Finalidades del tratamiento
 
-## 4. Base jurídica del tratamiento
+Los datos podrán utilizarse para:
 
-Según la finalidad concreta, el tratamiento puede basarse en:
+- Crear y administrar las cuentas de usuario.
+- Permitir el inicio de sesión con Google o correo electrónico.
+- Guardar las partidas, puntuaciones y progresos.
+- Mostrar clasificaciones y gestionar ligas y desafíos.
+- Mantener las funciones sociales que estén disponibles.
+- Enviar notificaciones relacionadas con la aplicación, cuando corresponda.
+- Atender consultas y solicitudes de los usuarios.
+- Mantener la seguridad, detectar errores y prevenir usos indebidos.
 
-- La prestación de las funciones solicitadas por el usuario y la gestión de su cuenta.
-- El cumplimiento de obligaciones legales aplicables.
-- El interés legítimo en mantener la seguridad y evitar abusos, cuando corresponda y tras ponderar los derechos del usuario.
-- El consentimiento, cuando sea necesario, por ejemplo para determinados tratamientos opcionales.
+## 4. Base jurídica
 
-Cuando un tratamiento dependa del consentimiento, el usuario podrá retirarlo sin que ello afecte a la licitud del tratamiento anterior a su retirada.
+El tratamiento se realizará sobre la base jurídica que corresponda a cada finalidad:
 
-## 5. Servicios de terceros y proveedores
+- **Prestación del servicio:** gestionar la cuenta y proporcionar las funciones solicitadas.
+- **Obligación legal:** cumplir las obligaciones legales aplicables.
+- **Interés legítimo:** mantener la seguridad y prevenir abusos cuando exista una base legítima debidamente evaluada.
+- **Consentimiento:** para los tratamientos opcionales que legalmente lo requieran, incluida la publicidad personalizada cuando corresponda.
 
-NasCole utiliza servicios de Firebase, proporcionados por Google, para determinadas funciones técnicas:
+El responsable deberá informar de la base jurídica concreta de cada tratamiento y permitir retirar el consentimiento cuando sea aplicable.
 
-- **Firebase Authentication:** gestión de cuentas e inicio de sesión.
-- **Firebase Realtime Database:** almacenamiento y sincronización de información de usuarios, resultados, ligas y otras funciones de la aplicación.
-- **Firebase Storage:** almacenamiento de imágenes de perfil, cuando se utilicen.
+## 5. Proveedores y servicios de terceros
+
+NasCole utiliza servicios de Firebase, proporcionados por Google, para ofrecer determinadas funcionalidades:
+
+- **Firebase Authentication:** autenticación y gestión de cuentas.
+- **Firebase Realtime Database:** almacenamiento y sincronización de datos de la aplicación, como información de usuarios, puntuaciones y partidas.
+- **Firebase Storage:** almacenamiento de archivos, como imágenes de perfil cuando se utilicen.
 - **Firebase Cloud Messaging:** envío de notificaciones push.
-- **Firebase Cloud Functions:** ejecución de determinadas operaciones del servicio, cuando estén desplegadas y se utilicen.
+- **Firebase Cloud Functions:** ejecución de operaciones del servidor cuando las funciones estén desplegadas y activas.
 
-Estos proveedores pueden tratar datos siguiendo sus condiciones y documentación de privacidad. El responsable debe revisar las condiciones aplicables, las configuraciones utilizadas y las posibles transferencias internacionales de datos.
+Estos proveedores pueden tratar información necesaria para prestar, proteger y mantener sus servicios, de acuerdo con sus condiciones y políticas aplicables.
 
-Política de privacidad de Google: https://policies.google.com/privacy
+Más información:
+https://firebase.google.com/support/privacy
 
-## 6. Publicidad y analítica
+Política de privacidad de Google:
+https://policies.google.com/privacy
 
-Si NasCole incorpora publicidad, servicios de medición de audiencia o herramientas de analítica, esta política deberá identificar los proveedores correspondientes, los datos que tratan, las finalidades y, cuando proceda, los mecanismos para obtener el consentimiento.
+## 6. Publicidad y monetización
 
-Esta sección deberá actualizarse antes de activar dichos servicios. La política debe describir los SDK y servicios que realmente se incluyan en la aplicación.
+En la fecha de esta política, NasCole todavía no incorpora publicidad, según la información disponible.
+
+En el futuro, la aplicación podría incorporar anuncios para financiar su mantenimiento y desarrollo.
+
+Antes de activar la publicidad, se actualizará esta política para identificar los proveedores publicitarios realmente utilizados y explicar los datos que puedan tratar, las finalidades, los identificadores publicitarios y las opciones de consentimiento que correspondan.
+
+Si se utiliza publicidad personalizada o tecnologías que requieran consentimiento, se habilitarán los mecanismos legalmente necesarios antes de realizar el tratamiento correspondiente.
+
+La inclusión futura de publicidad no implica que actualmente se estén recogiendo datos con esa finalidad.
 
 ## 7. Conservación de los datos
 
-Los datos se conservarán durante el tiempo necesario para prestar las funciones de NasCole y gestionar la cuenta del usuario.
+Los datos se conservarán durante el tiempo necesario para prestar las funciones de la aplicación y gestionar la cuenta.
 
-Cuando el usuario solicite eliminar su cuenta, se eliminarán los datos asociados que corresponda suprimir, incluidos los datos almacenados en los servicios utilizados por la aplicación, de acuerdo con el procedimiento de eliminación y las obligaciones legales aplicables.
+Cuando el usuario solicite la eliminación de su cuenta, se eliminarán los datos personales asociados que corresponda suprimir, incluidos los almacenados en los servicios utilizados por NasCole.
 
-Determinados datos podrán conservarse bloqueados durante el tiempo imprescindible cuando exista una obligación legal o sea necesario para formular, ejercer o defender reclamaciones. En ese caso, se limitará su uso a dicha finalidad.
+Podrán conservarse determinados datos cuando exista una obligación legal o sea necesario para formular, ejercer o defender reclamaciones. En esos casos, el tratamiento quedará limitado a la finalidad correspondiente y durante el plazo legal aplicable.
 
-## 8. Eliminación de la cuenta
+Los plazos concretos de conservación deberán determinarse según cada categoría de datos y finalidad.
 
-El usuario puede solicitar la eliminación de su cuenta y de los datos asociados mediante la opción de eliminación disponible en NasCole o a través del siguiente recurso web:
+## 8. Eliminación de la cuenta y de los datos
 
-[PEGA AQUÍ LA URL PÚBLICA DE TU PÁGINA DE ELIMINACIÓN DE CUENTA]
+Los usuarios podrán solicitar la eliminación de su cuenta y de los datos asociados mediante el procedimiento disponible en la aplicación o a través de esta página web:
 
-La solicitud se tramitará en un plazo razonable. La eliminación debe abarcar los datos personales asociados que corresponda suprimir, incluidos los datos almacenados en Firebase. Si existe algún dato que deba conservarse legalmente, se limitará su tratamiento conforme a la normativa aplicable.
+[INSERTAR AQUÍ LA URL PÚBLICA DE ELIMINACIÓN DE CUENTA DE NASCOLE]
+
+La solicitud podrá requerir una verificación razonable de la identidad para evitar eliminaciones no autorizadas.
+
+El responsable tramitará la solicitud en un plazo razonable y eliminará los datos que corresponda suprimir en los servicios utilizados por la aplicación. Los datos que deban conservarse legalmente se tratarán de acuerdo con la normativa aplicable.
+
+La página web deberá explicar claramente cómo solicitar la eliminación y ofrecer un medio funcional para hacerlo sin necesidad de volver a instalar la aplicación.
 
 ## 9. Derechos de los usuarios
 
-El usuario puede ejercer, cuando proceda, sus derechos de:
+Los usuarios pueden ejercer los derechos que les reconozca la normativa aplicable, incluidos:
 
 - Acceso a sus datos personales.
 - Rectificación de datos inexactos.
 - Supresión de sus datos.
 - Oposición al tratamiento.
 - Limitación del tratamiento.
-- Portabilidad de los datos.
+- Portabilidad de los datos cuando proceda.
 - Retirada del consentimiento cuando el tratamiento se base en él.
 
-Para ejercer estos derechos, puede escribir a **supportTrivial@gmail.com**, indicando su solicitud y aportando la información razonablemente necesaria para verificar su identidad sin enviar contraseñas.
+Para ejercer estos derechos, pueden contactar con el responsable mediante:
 
-También puede presentar una reclamación ante la Agencia Española de Protección de Datos: https://www.aepd.es/
+**Correo electrónico:** [Correo de soporte de NasCole].
 
-## 10. Seguridad
+También pueden presentar una reclamación ante la Agencia Española de Protección de Datos:
 
-Se aplican medidas técnicas y organizativas adecuadas para proteger los datos frente al acceso no autorizado, la pérdida, la alteración o la divulgación indebida.
+https://www.aepd.es/
 
-Ningún sistema puede garantizar una seguridad absoluta. El responsable debe revisar periódicamente los permisos, las reglas de acceso a Firebase y la configuración de los proveedores utilizados.
+## 10. Seguridad de los datos
 
-## 11. Privacidad de menores
+El responsable aplicará medidas técnicas y organizativas adecuadas para proteger los datos frente al acceso no autorizado, la pérdida, la alteración o la divulgación indebida.
 
-NasCole deberá indicar la edad mínima de uso que corresponda a su público objetivo. Si está dirigida a menores, se aplicarán las medidas y requisitos de consentimiento y protección de datos que correspondan a su edad y a la normativa vigente.
+Estas medidas incluyen la configuración adecuada de los permisos de acceso y las reglas de seguridad de Firebase, así como la revisión de los servicios utilizados.
 
-Los usuarios no deben compartir información personal sensible en los chats, perfiles o espacios públicos de la aplicación.
+La seguridad también depende de la configuración efectiva de la aplicación y de sus proveedores. Ningún sistema puede garantizar una protección absoluta.
 
-## 12. Cambios en esta política
+## 11. Menores de edad
 
-Esta política podrá actualizarse para reflejar cambios en las funciones de NasCole, los proveedores utilizados o la normativa aplicable. La versión vigente estará disponible en una dirección pública y accesible.
+NasCole está concebida para el público general. Por ello, se deberán tener en cuenta las obligaciones aplicables a la protección de menores y, cuando corresponda, los requisitos de consentimiento para el tratamiento de sus datos.
 
-## 13. Contacto
+Antes del lanzamiento, el responsable determinará la edad mínima de uso y revisará si la aplicación está dirigida también a niños o si puede atraer razonablemente a este público.
 
-Para preguntas sobre privacidad, protección de datos o eliminación de cuentas, escribe a:
+Si se incorpora publicidad, deberán revisarse asimismo las restricciones y garantías aplicables a los menores.
 
-**supportTrivial@gmail.com**
+## 12. Transferencias internacionales
+
+Los proveedores tecnológicos utilizados por NasCole pueden tratar datos desde distintos países, según los servicios, la configuración y las condiciones aplicables.
+
+Cuando se produzcan transferencias internacionales de datos personales, se utilizarán los mecanismos y garantías exigidos por la normativa de protección de datos.
+
+El responsable deberá comprobar las condiciones específicas aplicables a su proyecto de Firebase y a cualquier proveedor adicional.
+
+## 13. Cambios en la política
+
+Esta política podrá actualizarse cuando cambien las funcionalidades de NasCole, los proveedores utilizados, las prácticas de tratamiento de datos o los requisitos legales.
+
+La versión vigente estará disponible en una dirección web pública y accesible.
+
+## 14. Contacto
+
+Para consultas sobre privacidad, protección de datos o eliminación de cuentas, contacta con:
+
+**Responsable:** Sergio Iglesias Lobo.
+
+**Correo electrónico:** trivialSupport@gmail.com.
