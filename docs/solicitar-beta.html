@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index,follow">
+<title>Solicitar acceso a la beta - NasCole</title>
+<meta name="description" content="Solicita acceso a la versión beta de NasCole.">
+<style>
+:root{color-scheme:light;--primary:#3157d5;--text:#202536;--muted:#5e6678;--bg:#f5f7fc;--card:#fff;--border:#e1e6f0}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+header{background:#172554;color:#fff;padding:28px 20px}header .inner,main,footer{width:min(760px,calc(100% - 32px));margin:0 auto}
+header a{color:#fff;text-decoration:none;opacity:.9}header h1{margin:12px 0 5px;font-size:clamp(1.8rem,4vw,2.4rem);line-height:1.2}header p{margin:0;color:#dbeafe}
+main{padding:28px 0 40px}section{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:clamp(20px,4vw,30px);margin-bottom:18px;box-shadow:0 5px 20px rgba(20,35,80,.04)}
+h2{margin:0 0 12px;font-size:1.3rem}label{display:block;font-weight:700;margin:16px 0 6px}
+input,select,textarea{width:100%;padding:12px;border:1px solid #cbd3e2;border-radius:8px;font:inherit;background:#fff;color:var(--text)}textarea{min-height:90px;resize:vertical}
+.check{display:flex;align-items:flex-start;gap:10px;margin-top:18px;font-weight:400}.check input{width:auto;margin-top:6px;flex-shrink:0}
+button{border:0;border-radius:9px;background:var(--primary);color:#fff;padding:13px 18px;font-size:1rem;font-weight:700;cursor:pointer;margin-top:20px}
+.muted{color:var(--muted);font-size:.94rem}.note{background:#eef2ff;border-left:4px solid var(--primary);padding:12px 15px;border-radius:6px}a{color:var(--primary)}
+footer{color:var(--muted);font-size:.92rem;padding:0 0 28px}
+</style></head><body>
+<header><div class="inner"><a href="./index.html">← Volver a NasCole</a><h1>Solicita acceso a la beta</h1><p>Ayúdanos a probar NasCole antes de su lanzamiento.</p></div></header>
+<main>
+<section><h2>Quiero probar NasCole</h2>
+<p>Rellena este formulario para solicitar acceso a la versión beta. Enviar una solicitud no garantiza que el acceso sea inmediato: revisaremos las solicitudes y te contactaremos por correo si podemos darte acceso.</p>
+<!-- FormSubmit: en el primer envío, el servicio enviará un correo de activación a trivialSupport@gmail.com. Confirma ese correo para activar la recepción de solicitudes. -->
+<form action="https://formsubmit.co/trivialSupport@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="Nueva solicitud de acceso a la beta de NasCole">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_captcha" value="true">
+<input type="hidden" name="_next" value="https://trivialsupport-spec.github.io/Trivial/solicitud-beta-enviada.html">
+<label for="nombre">Nombre o apodo</label><input id="nombre" name="Nombre o apodo" type="text" maxlength="60" autocomplete="nickname" required>
+<label for="email">Correo electrónico</label><input id="email" name="Correo electrónico" type="email" maxlength="254" autocomplete="email" required>
+<label for="android">Versión de Android (opcional)</label><select id="android" name="Versión de Android">
+<option value="">No lo sé / Prefiero no indicarlo</option><option>Android 10</option><option>Android 11</option><option>Android 12</option><option>Android 13</option><option>Android 14</option><option>Android 15</option><option>Android 16 o posterior</option></select>
+<label for="comentario">¿Quieres añadir algo? (opcional)</label><textarea id="comentario" name="Comentario" maxlength="500" placeholder="Por ejemplo, qué te gustaría probar o qué dispositivo utilizas."></textarea>
+<label class="check" for="privacidad"><input id="privacidad" name="Acepta información de privacidad" type="checkbox" value="Sí" required><span>He leído la <a href="./privacy-policy.html" target="_blank" rel="noopener">política de privacidad</a> y solicito que se utilicen estos datos para gestionar mi solicitud de acceso a la beta y contactar conmigo sobre ella.</span></label>
+<button type="submit">Enviar solicitud</button></form></section>
+<section><h2>¿Qué pasa después?</h2><ol><li>Recibiremos tu solicitud por correo una vez activado el formulario.</li><li>Revisaremos los datos y la disponibilidad de plazas para la beta.</li><li>Si te damos acceso, te escribiremos al correo que hayas indicado con los siguientes pasos.</li></ol>
+<p class="note"><strong>Privacidad:</strong> facilita solo los datos solicitados. No incluyas contraseñas, códigos de acceso ni información sensible. Puedes escribir a <a href="mailto:trivialSupport@gmail.com">trivialSupport@gmail.com</a> para consultar o solicitar la eliminación de los datos de tu solicitud.</p></section>
+</main><footer><p>NasCole · Contacto: <a href="mailto:trivialSupport@gmail.com">trivialSupport@gmail.com</a></p><p><a href="./privacy-policy.html">Política de privacidad</a> · <a href="./condiciones-uso.html">Condiciones de uso</a> · <a href="./aviso-legal.html">Aviso legal</a></p></footer>
+</body></html>
